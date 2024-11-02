@@ -258,38 +258,40 @@ Using Issues and creating dedicated branches for them helps keep work organized 
 
 
 1. # *Creating a New Issue*
-   - Go to your GitHub repository and navigate to the **Issues** tab.
-   - Click **New Issue** to create a new issue.
-   - Give the issue a descriptive title and add details in the description about the task, bug, or feature.
-   - Assign labels, milestone, or assignees if relevant, then click **Submit new issue**.
+    - Go to your GitHub repository and navigate to the **Issues** tab.
+    - Click **New Issue** to create a new issue.
+    - Give the issue a descriptive title and add details in the description about the task, bug, or feature.
+    - Assign labels, milestone, or assignees if relevant, then click **Submit new issue**.
    
 
 
 2. # *Creating a New Branch for the Issue*
-   - In your local project, make sure you’re in the `main` branch (or the default branch) by running:
+    - In your local project, make sure you’re in the `main/master` branch (or the default branch) by running:
      
      ```bash```
-    git checkout main
+    git checkout main/master
      
 
-   - Create a new branch from `main`, naming it according to the issue (e.g., `issue-#<issue-number>-description`), with:
+    - Create a new branch from `main`, naming it according to the issue (e.g., `issue-#<issue-number>-description`), with:
      
      ```bash```
      git checkout -b issue-#<issue-number>-description
 
 
-   - This will create and switch to a new branch for the issue.
+    - This will create and switch to a new branch for the issue.
 
-
+    - you can also do this **in git** by clicking on the issue -> **create new branch**
+    
+     
 
 3. # *Switching Between Branches*
-   - To switch back to `main` or any other branch, use:
+    - To switch back to `main` or any other branch, use:
      
      ```bash```
      git checkout <branch-name>
 
 
-   - Check which branch you’re currently on at any time with:
+    - Check which branch you’re currently on at any time with:
      
      ```bash```
      git branch
@@ -297,7 +299,7 @@ Using Issues and creating dedicated branches for them helps keep work organized 
 
 
 4. # *Committing and Pushing Changes in the Issue Branch*
-   - After making changes, stage and commit them in your issue branch:
+    - After making changes, stage and commit them in your issue branch:
      
      ```bash```
      git add .
@@ -305,7 +307,7 @@ Using Issues and creating dedicated branches for them helps keep work organized 
      git commit -m "fix: resolve issue #<issue-number> - add description"
 
 
-   - Push the issue branch to GitHub so others can see or review it:
+    - Push the issue branch to GitHub so others can see or review it:
      
      ```bash```
      git push -u origin issue-#<issue-number>-description
@@ -313,11 +315,11 @@ Using Issues and creating dedicated branches for them helps keep work organized 
 
 
 5. # *Submitting a Pull Request (PR)*
-   - Once the issue is resolved, go to GitHub and create a Pull Request (PR) from your issue branch to the `main` branch.
-   - Describe what was done to resolve the issue and link the PR to the issue (e.g., by mentioning `closes #<issue-number>` in the PR      description).
-   - After review, merge the PR and delete the issue branch if no longer needed.
+    - Once the issue is resolved, go to GitHub and create a Pull Request (PR) from your issue branch to the `main` branch.
+    - Describe what was done to resolve the issue and link the PR to the issue (e.g., by mentioning `closes #<issue-number>` in the PR      description).
+    - After review, merge the PR and delete the issue branch if no longer needed.
    
-   - Organizing work with issues and branches ensures clear task separation, making the project easier to manage and collaborate on.
+    - Organizing work with issues and branches ensures clear task separation, making the project easier to manage and collaborate on.
 
 
 
