@@ -2,10 +2,13 @@
 
 
 
+### Project Overview
+
+This project serves as a comprehensive guide and reference for learning and practicing Angular development. It covers everything from setting up a new Angular standalone project to using essential tools like Yarn and Angular Material, and integrating Git for version control. The goal is to provide a complete documentation source where users can learn, review, and reinforce their understanding of Angular development best practices, installations, and related workflows.
+
 
 
 ### TABLE OF CONTENT ###
-
 
 1. [Create a New Angular Standalone Project](#create-a-new-angular-standalone-project)
     - [Create a New Project Folder](#create-a-new-project-folder)
@@ -13,7 +16,7 @@
     - [Install Node.js](#install-nodejs)
     - [Install Angular](#install-angular)
     - [Create New Angular Standalone Project](#create-new-angular-standalone-project)
-
+    - [Create New Angular Standalone Component](#create-new-angular-standalone-component)
 
 2. [Install Yarn](#install-yarn)
     - [Install Yarn](#install-yarn-1)
@@ -47,6 +50,9 @@
     - [Standardized Keywords for Commit Types](#standardized-keywords-for-commit-types)
     - [Examples of Commit Messages](#examples-of-commit-messages)
     - [Commit Message Descriptions](#commit-message-descriptions)
+
+
+8. [Project Structure in Angular](#project-structure-in-angular)
 
 
 
@@ -87,6 +93,19 @@
 
     ```bash```
     ng new project-name --standalone
+
+
+
+6. # *Create New Angular Standalone Component:*
+    - Create a new standalone component:
+
+    ```bash```
+    ng generate component component-name --standalone
+
+    or 
+
+    ```bash```
+    ng g c component-name --standalone
 
 
 
@@ -365,4 +384,58 @@ A clear and consistent commit message structure helps keep the project history c
 
 
 
-<!----------------------------------------------------- END OF COMMIT MESSAGE STYLE GUIDE ------------------------------------------------>
+<!----------------------------------------------------- END OF COMMIT MESSAGE STYLE GUIDE -------------------------------------------------->
+
+
+
+                                                                                                                                            .
+
+
+
+<!-------------------------------------------------------- Project Structure in Angular ---------------------------------------------------->
+
+## Project Structure in Angular
+
+When building an Angular application, maintaining a well-organized project structure is essential for scalability, maintainability, and collaboration. Below is a recommended project structure layout with an explanation of each directory and its purpose:
+
+src/
+  app/
+    core/
+    shared/
+    features/
+      components/
+        `home.component.ts`
+        `home.component.html`
+        `home.component.css`
+    `app.component.ts`
+    `app.component.html`
+    `app.component.css`
+  assets/
+  environments/
+index.html
+main.ts
+
+
+- src/: The main source folder for the application.
+
+    - app/: Contains all the application-specific code.
+
+        - core/: Core services, guards, interceptors, and other singleton components used across the app.
+
+        - shared/: Shared components, directives, pipes, and modules that can be reused throughout the app.
+
+        - features/: Feature modules representing distinct parts of the application, such as specific pages.
+
+            - components/: Example of a feature module for the Home page, containing the component's TypeScript logic, template, and styles.
+
+    - assets/: Static files such as images, icons, etc.
+
+    - environments/: Configuration files for different environments.
+
+- index.html: Entry point for the application.
+
+- main.ts: Entry point for bootstrapping the app.
+
+
+
+<!-------------------------------------------------------- PROJECT STRUCTURE IN ANGULAR -------------------------------------------------->
