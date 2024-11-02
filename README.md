@@ -436,7 +436,7 @@ main.ts
 
 - index.html: Entry point for the application.
 
-- main.ts: Entry point for bootstrapping the app.
+- main.ts: Entry point for bootstrapping the app
 
 
 
