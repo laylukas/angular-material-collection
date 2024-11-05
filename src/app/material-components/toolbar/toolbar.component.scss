@@ -1,7 +1,7 @@
 .toolbar1 {
     background: linear-gradient(90deg, red, black);
     position: fixed;
-    z-index: 99999;
+    z-index: 999;
     height: 12%;
 
     .button-1 {
@@ -24,4 +24,6 @@
     .spacer {
         width: 10px;
     }
+
+
 }
