@@ -1,0 +1,13 @@
+.sidenav-container {
+    height: 100vh; // Die gesamte Höhe des Viewports
+    display: flex;
+  }
+  
+  mat-sidenav {
+    width: 250px; // Feste Breite für die Sidenav
+  }
+  
+  mat-sidenav-content {
+    padding: 16px; // Abstand für den Hauptinhalt
+  }
+  

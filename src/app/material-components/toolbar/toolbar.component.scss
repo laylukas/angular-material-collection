@@ -1,27 +1,13 @@
 .toolbar1 {
-    background: linear-gradient(90deg, red, black);
-    position: fixed;
-    z-index: 99999;
-    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #000000; 
+    color: white; 
+    height: 64px; 
+    padding: 0 16px; 
+  }
 
-    .button-1 {
-        background: linear-gradient(90deg, black, red);
-        color: white
-    }
-
-    .button-2 {
-        background-color: red;
-        color: yellow;
-
-    }
-
-    .button-3 {
-        background-color: red;
-        color: black;
-
-    }
-
-    .spacer {
-        width: 10px;
-    }
+.heading {
+    font-weight: bold;
 }
